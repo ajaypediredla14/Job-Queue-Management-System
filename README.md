@@ -1,2 +1,2 @@
 # Job-Queue-Management-System
-Python Task management App
+Python Task Management App
