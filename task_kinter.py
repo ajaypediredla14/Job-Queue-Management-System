@@ -22,15 +22,19 @@ email_var=tkinter.StringVar()
 subject_var=tkinter.StringVar()
 message_var=tkinter.StringVar()
 
+#populate function updates the list-box with the data in the database
 def populate():
     listbox.delete(0, END)
     for rows in usertasks.show():
         listbox.insert(END, rows)
 
+#delete functon to delete the task in the list-box
 def deletetask(event):
     usertasks.deletebytask(listbox.get(ANCHOR))
     populate()
 
+
+#run function to run all the tasks using mailtask.py file
 def run():
     c=0
     for rows in usertasks.show():
@@ -56,6 +60,7 @@ def run():
             print("Message not sent to "+rows[0])
 
 
+#submit function to submit user data to the database
 def submit():
     email=email_var.get()
     subject =subject_var.get()
@@ -67,9 +72,6 @@ def submit():
     populate()
     usertasks.show()
     
-
-
-
 
 email = Label(main,
      text="Email", 
