@@ -4,7 +4,7 @@
 # Job-Queue-Management-System
 
 ## Python Task Management App
-#### Simple  Task  Management  app  created  with  python (Tkinter module) with backend sql database connection. 
+#### Simple  Task  Management  app  created  using  python (Tkinter module) with backend sql database connection. 
 
 ## Table of contents
 * [General info](#general-info)
